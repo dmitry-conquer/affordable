@@ -61,7 +61,8 @@ html {
 }
 
 .heading-xl,
-.heading-lg {
+.heading-lg,
+.heading-md {
   font-weight: 900;
 }
 
@@ -69,18 +70,16 @@ html {
   font-size: fluid(42, 60);
 }
 .heading-lg {
-  font-size: fluid(40, 56);
+  font-size: fluid(34, 56);
   margin-bottom: fluid(24, 40);
 }
 
-h3,
 .heading-md {
+  font-size: fluid(30, 36);
 }
 
-h4,
 .heading-sm {
 }
 
-h5,
 .heading-xs {
 }
