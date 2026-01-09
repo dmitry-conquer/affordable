@@ -15,12 +15,13 @@ html {
   --body: #3f444b;
   --white: #fff;
   --light: #d5d8dc;
+  --lighter: #fbfbfb;
 
   overflow: hidden;
   position: relative;
   font-size: 1rem;
   font-family: "Inter", sans-serif;
-  color: var(--gray);
+  color: var(--body);
 
   .flexible-container {
     max-width: rem(1240);
@@ -72,8 +73,6 @@ html {
   }
 
   // Buttons
-
-  
 
   // Text
   p,

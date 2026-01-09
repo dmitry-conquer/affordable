@@ -1,0 +1,118 @@
+@use "../helpers/" as *;
+
+.about {
+  padding-block: fluid(40, 60);
+
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: fluid(24, 40);
+  }
+
+  &__body {
+    display: flex;
+    gap: rem(40);
+
+    @include medium {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__image {
+    flex: 0 1 rem(571);
+    border-radius: 8px;
+    overflow: hidden;
+
+    @include medium {
+      flex: 0 1 auto;
+      max-width: rem(600);
+      margin-inline: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__content {
+    flex: 0 1 rem(589);
+
+    @include medium {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__text {
+    line-height: 1.6;
+    margin-bottom: rem(24);
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(8);
+  }
+
+  &__stat {
+    border-radius: 6px 6px 6px 6px;
+    background-color: var(--lighter);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: rem(16);
+    display: flex;
+    align-items: center;
+    gap: fluid(20, 40);
+
+    @include small {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__stat-value {
+    color: var(--heading);
+    font-size: fluid(28, 36);
+    line-height: 1.2;
+    text-transform: uppercase;
+    flex: 0 0 rem(146);
+
+    @include small {
+      flex: 0 1 auto;
+    }
+
+    span {
+      font-size: 1rem;
+      line-height: 1.4;
+      display: block;
+    }
+  }
+
+  &__stat-text {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  &__logos {
+    margin-top: fluid(40, 60);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(160), 1fr));
+    gap: rem(20);
+
+    @include small {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__logo {
+    display: block;
+    padding-inline: rem(20);
+
+    margin-inline: auto;
+  }
+}
