@@ -1,7 +1,6 @@
 @use "../helpers/" as *;
 
 .offers {
-  padding-block: fluid(40, 60);
 
   &__container {
     max-width: rem(2020);

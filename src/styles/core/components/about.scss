@@ -1,15 +1,6 @@
 @use "../helpers/" as *;
 
 .about {
-  padding-block: fluid(40, 60);
-
-  &__container {
-  }
-
-  &__title {
-    margin-bottom: fluid(24, 40);
-  }
-
   &__body {
     display: flex;
     gap: rem(40);
