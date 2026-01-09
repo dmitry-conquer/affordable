@@ -9,10 +9,12 @@ html {
 .flexible {
   --accent: #ea1d26;
   --primary: #030731;
+  --primary-light: #222549;
   --secondary: #ff6c03;
   --heading: #2e475d;
   --body: #3f444b;
   --white: #fff;
+  --light: #d5d8dc;
 
   overflow: hidden;
   position: relative;
@@ -32,13 +34,9 @@ html {
 
   // Headings
 
-  h1,
   .heading-xl,
-  h2,
   .heading-lg,
-  h3,
   .heading-md,
-  h4,
   .heading-sm {
     line-height: 1.2;
     text-align: center;
@@ -49,19 +47,14 @@ html {
     }
   }
 
-  h1,
   .heading-xl,
-  h2,
   .heading-lg {
     font-weight: 900;
   }
 
-  h1,
   .heading-xl {
     font-size: fluid(42, 60);
   }
-
-  h2,
   .heading-lg {
     font-size: fluid(40, 56);
   }
