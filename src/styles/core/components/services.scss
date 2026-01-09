@@ -1,0 +1,128 @@
+@use "../helpers" as *;
+
+.services {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease;
+
+  &__container {
+  }
+
+  &__title {
+  }
+}
+
+.tabs-services {
+  border-radius: 16px 16px 16px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: fluid(20, 40);
+  backdrop-filter: blur(13px);
+  display: flex;
+  gap: rem(40);
+
+  @include medium {
+    flex-direction: column;
+  }
+
+  &__aside {
+    flex: 0 0 rem(348);
+
+    @include medium {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: rem(24);
+    text-align: left;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(5, 16);
+  }
+
+  &__button {
+    width: 100%;
+    text-align: left;
+    padding: rem(8);
+    background-color: transparent;
+    transition: all 0.3s ease;
+    color: var(--white);
+    font-size: fluid(20, 24);
+    line-height: 1.4;
+    border-left: 2px solid transparent;
+
+    &.is-active {
+      border-color: var(--accent);
+      border-color: var(--accent);
+      background-color: rgba(251, 251, 251, 0.75);
+    }
+
+    @include hover {
+      &:not(.is-active) {
+        border-color: var(--accent);
+        background-color: rgba(251, 251, 251, 0.1);
+      }
+    }
+  }
+
+  &__cta {
+    display: inline-block;
+    margin-top: rem(24);
+
+    &--desktop {
+      @include medium {
+        display: none;
+      }
+    }
+    &--mobile {
+      display: none;
+      @include medium {
+        display: inline-block;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__panels {
+    flex-grow: 1;
+    @include medium {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__panel {
+    display: none;
+    color: var(--white);
+    font-size: rem(14);
+    line-height: 1.6;
+
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-size: fluid(24, 30);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: fluid(12, 24);
+    }
+    p:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    &.is-active {
+      display: block;
+    }
+  }
+}
