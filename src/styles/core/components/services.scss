@@ -1,6 +1,7 @@
 @use "../helpers" as *;
 
 .services {
+  margin-block: fluid(40, 60);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

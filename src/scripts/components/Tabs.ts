@@ -137,10 +137,10 @@ class Tabs {
       contentElement.classList.toggle(this.stateClasses.isActive, isActive);
     });
 
-    const panelsElement = this.rootElement.querySelector("#tabs-services-panels") as HTMLElement;
-    if (panelsElement) {
-      panelsElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    // const panelsElement = this.rootElement.querySelector("#tabs-services-panels") as HTMLElement;
+    // if (panelsElement) {
+    //   panelsElement.scrollIntoView({ behavior: "smooth", block: "center" });
+    // }
   }
 
   // Handles button click events

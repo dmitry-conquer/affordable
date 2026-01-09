@@ -62,7 +62,8 @@ html {
 
 .heading-xl,
 .heading-lg,
-.heading-md {
+.heading-md,
+.heading-sm {
   font-weight: 900;
 }
 
@@ -79,6 +80,7 @@ html {
 }
 
 .heading-sm {
+  font-size: rem(18);
 }
 
 .heading-xs {
