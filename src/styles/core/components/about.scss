@@ -103,7 +103,7 @@
   &__logo {
     display: block;
     padding-inline: rem(20);
-
+    width: auto !important;
     margin-inline: auto;
   }
 }

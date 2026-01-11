@@ -32,6 +32,12 @@ html {
       display: none !important;
     }
   }
+
+  button {
+    color: inherit !important;
+    background-image: none !important;
+    border-radius: inherit !important;
+  }
 }
 
 // Containers
