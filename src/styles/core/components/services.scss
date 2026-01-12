@@ -53,9 +53,11 @@
     padding: rem(8);
     background-color: transparent;
     transition: all 0.3s ease;
-    color: var(--white);
+    color: var(--white) !important;
     font-size: fluid(20, 24);
     line-height: 1.4;
+    font-weight: 400 !important;
+    text-transform: none !important;
     border-left: 2px solid transparent;
 
     &.is-active {

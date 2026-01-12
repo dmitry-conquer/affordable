@@ -4,6 +4,13 @@ html {
   font-size: 100%;
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+
+  button.tabs-services__button {
+    color: var(--white) !important;
+    &.is-active {
+      color: var(--heading) !important;
+    }
+  }
 }
 
 .flexible {
@@ -90,4 +97,9 @@ html {
 }
 
 .heading-xs {
+}
+
+
+p:empty {
+  display: none !important;
 }
