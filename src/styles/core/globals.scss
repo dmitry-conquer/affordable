@@ -103,3 +103,10 @@ html {
 p:empty {
   display: none !important;
 }
+
+
+html .flexible button.ButtonBase__ButtonContainer-sc-597a44ae-3 {
+  background-color: var(--accent) !important;
+  color: var(--white) !important;
+  border-radius: 24px !important;
+}

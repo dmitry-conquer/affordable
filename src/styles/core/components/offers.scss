@@ -43,7 +43,8 @@
       transition: all 0.3s ease;
 
       &.swiper-pagination-bullet-active {
-        background-color: var(--secondary);
+        border-color: var(--accent);
+        background-color: var(--accent);
       }
     }
   }
@@ -52,7 +53,7 @@
     transition: color 0.3s ease;
 
     @include hover {
-      color: var(--secondary);
+      color: var(--accent) !important;
     }
 
     &--prev {
