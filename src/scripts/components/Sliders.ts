@@ -29,7 +29,7 @@ export default class Sliders {
           slidesPerView: 1.2,
         },
 
-        700: {
+        767: {
           slidesPerView: 1.4,
         },
 

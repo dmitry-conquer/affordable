@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", (): void => {
   new Tabs();
   new Marquee("marquee-track", { speed: 0.5, pauseOnHover: false });
 });
+
