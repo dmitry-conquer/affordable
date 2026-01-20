@@ -77,6 +77,8 @@
 
   @include small {
     height: auto;
+    padding: 0;
+    border-radius: 8px;
   }
 
   &.is-active {
@@ -125,13 +127,16 @@
 
     @include small {
       height: auto;
+      padding: rem(10);
+      border-bottom: 2px solid var(--white);
+      border-radius: 8px;
     }
   }
 
   &__title {
     color: var(--white);
-    font-size: fluid(20, 24);
-    font-weight: 700;
+    font-size: fluid(18, 24);
+    font-weight: 700 !important;
     line-height: 1.2;
     text-align: left;
   }
@@ -237,8 +242,7 @@
     transform: translateY(0);
     position: static;
     background-color: var(--primary);
-    padding: 0;
-    margin-top: rem(16);
+    padding: rem(16);
     height: auto;
   }
 
@@ -266,17 +270,21 @@
 
     @include small {
       grid-template-columns: 1fr;
+      gap: 0;
     }
   }
 
   &__column {
     color: var(--white);
-    font-size: rem(12);
+    font-size: rem(10);
     line-height: 1.2;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: stretch;
+    @include small {
+      font-size: rem(14);
+    }
 
     &--left {
       *:last-child {
@@ -298,11 +306,15 @@
 
     em,
     i {
-      font-size: rem(10);
+      font-size: rem(8);
+
+      @include small {
+        font-size: rem(10);
+      }
     }
 
     ul {
-      padding-left: rem(12);
+      padding-left: rem(14);
       margin-bottom: rem(16);
       li {
         list-style-type: disc;

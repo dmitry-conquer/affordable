@@ -11,7 +11,6 @@ export default class Sliders {
       loop: true,
       centeredSlides: true,
       speed: 1100,
-      // simulateTouch: false,
       spaceBetween: 24,
 
       pagination: {
@@ -50,7 +49,7 @@ export default class Sliders {
           slidesPerView: 3.6,
         },
         1920: {
-          slidesPerView: 4,
+          slidesPerView: 3.8,
         },
       },
     });
