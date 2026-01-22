@@ -142,6 +142,13 @@
     @include x-small {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    a.hero-home__service {
+      @include hover {
+        border-color: var(--secondary);
+        transform: scale(1.03);
+      }
+    }
   }
 
   &__service {
@@ -157,11 +164,6 @@
     row-gap: rem(16);
     border: 1px solid rgba(255, 255, 255, 0.288);
     transition: all 0.3s ease;
-
-    @include hover {
-      border-color: var(--secondary);
-      transform: scale(1.03);
-    }
 
     @include x-small {
       &:last-child {
